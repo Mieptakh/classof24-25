@@ -1,0 +1,118 @@
+/* Reset Margin & Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3498db, #1e87d4);
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Container */
+.video-container {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Tombol Fullscreen & Download */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.fullscreen-btn,
+.download-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna Tombol Fullscreen */
+.fullscreen-btn {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+}
+
+.fullscreen-btn:hover {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna Tombol Download */
+.download-btn {
+    background: linear-gradient(135deg, #27ae60, #1e8e50);
+    color: white;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #2ecc71, #1fbf60);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .video-container {
+        width: 95%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fullscreen-btn,
+    .download-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 80%;
+        margin: auto;
+    }
+}
